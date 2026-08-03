@@ -1,0 +1,35 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "agora-debates",
+      "runtime": "nodejs20",
+      "ignore": [
+        "node_modules",
+        "lib",
+        "*.log"
+      ]
+    }
+  ],
+  "emulators": {
+    "auth": {
+      "port": 9097
+    },
+    "firestore": {
+      "port": 8082
+    },
+    "functions": {
+      "port": 5004
+    },
+    "ui": {
+      "enabled": true,
+      "port": 4004
+    },
+    "singleProjectMode": true
+  }
+}
+

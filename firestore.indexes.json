@@ -1,0 +1,33 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "arguments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "side",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "consensusMetric",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "arguments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "side",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createdAt",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
