@@ -37,7 +37,6 @@ import { DebateCard } from "./components/DebateCard";
 import { AuthModal } from "./components/AuthModal";
 import { CreateDebateModal } from "./components/CreateDebateModal";
 import { DebateDetail } from "./components/DebateDetail";
-import { ConfirmModal } from "./components/ConfirmModal";
 import { Toast } from "./components/Toast";
 
 import { 
@@ -906,7 +905,7 @@ export default function App() {
                     isExpired={isDebateExpired(d)}
                     formatExpiration={formatExpiration}
                     currentUserId={user?.uid}
-                    onDelete={(e, debateToDelete) => handleDeleteDebate(debateToDelete)}
+                    onDelete={(_e, debateToDelete) => handleDeleteDebate(debateToDelete)}
                   />
                 ))}
               </div>
