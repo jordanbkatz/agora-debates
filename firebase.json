@@ -5,7 +5,7 @@
   },
   "functions": [
     {
-      "source": "functions",
+      "source": "firebase-functions",
       "codebase": "agora-debates",
       "runtime": "nodejs20",
       "ignore": [
